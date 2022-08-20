@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>My Site</title>
+</head>
+<body>
+
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+				<div class="header__inner">
+					<div class="header__info">
+					<!-- Курс валют -->
+					<form class="rates">
+						<div class="courses">
+							<h1 class="rates__title">Курс:</h1>
+							<div class="course-item card card-body">
+								<div class="course-item-title">&#36;</div>
+								<div class="course-item-value" data-value="USD">&#45;&#45;.&#45;&#45;</div>
+							</div>
+							<div class="course-item card card-body">
+								<div class="course-item-title">&#8364;</div>
+								<div class="course-item-value" data-value="EUR">&#45;&#45;.&#45;&#45;</div>
+							</div>
+							<div class="course-item card card-body">
+								<div class="course-item-title">&#163;</div>
+								<div class="course-item-value" data-value="GBP">&#45;&#45;.&#45;&#45;</div>
+							</div>
+						</div>
+
+					</form>
+            <!--ПОГОДА-->
+					<div class="weather">
+						<div class="weather__inner">
+
+							<h4 class="weather__title">Погода:</h4>
+							<div class="weather__items">
+								<p class="weather__city"></p>
+								<p class="weather__temperature"></p>
+                                <!--<p class="weather__img"></p>-->
+							</div>
+
+						</div>
+
+					</div>
+             <!--Дата и Время-->
+					<div class="dateTime"></div>
+					</div>
+			<nav class="menu">
+				<a class="menu__item-about" href="">Обо мне</a>
+				<a class="menu__item-portfolio" href="">Портфолио</a>
+				<a class="menu__item-experience" href="">Опыт</a>
+				<a class="menu__item-contacts" href="">Контакты</a>
+			</nav>
+				</div>
+		</div>
+	</header>
+
+	<!-- Section Greeting -->
+	<section class="greeting">
+		<div class="container">
+			<div class="greeting__card">
+				<img class="greeting__card-img" src="images/site_avatar.jpg" alt="" >
+				<h3 class="greeting__card-title">Привет, я Артем</h3>
+				<p class="greeting__card-text">Я вебразработчик.</p>
+				<p class="greeting__card-text"> Готов к интересным проектам и конструктивным предложениям</p>
+			</div>
+		</div>
+	</section>
+	<!--  -->
+
+<!-- Section Social-->
+	<div class="container">
+		<div class="socials">
+
+			<div class="social__links">
+				<a class="social__links-item" href=""><i class="fab fa-instagram"></i></a>
+				<a class="social__links-item" href=""><i class="fab fa-facebook-square"></i></a>
+				<a class="social__links-item" href=""><i class="fab fa-whatsapp-square"></i></a>
+				<a class="social__links-item" href=""><i class="far fa-envelope"></i></a>
+				<a class="social__links-item" href=""><i class="fab fa-telegram-plane"></i></a>
+			</div>
+		</div>
+	</div>
+		<section class="about">
+			<div class="about__inner">
+				<div class="container">
+			     <h2 class="about__title">
+				 6  ФАКТОВ ОБО МНЕ...
+			    </h2>
+			   </div>
+			</div>
+
+			<div class="about__main">
+				<div class="container">
+					<div class="container-fluid">
+						<div class="about__main-container">
+
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											В любой работе, при любых обстоятельствах я всегда нацелен на
+											результат, который всегда ставлю во главу угла. Результат работы показывает
+											мою компетентность, профессионализм, выявляет недостатки, над которыми я впоследствии
+											обязательно работаю.
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/result-about.png"  alt="">
+										<h6 class="collection__info-title" style="margin-left: 5px;">
+											<h3 class="front__title">РЕЗУЛЬТАТ</h3>
+
+										</h6>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											Я честный человек. Об этом я могу говорить с абсолютной уверенностью.
+											Я всегда выполняю свои обещания и взятые на себя обязательства. Отвечаю буквально
+											за каждое слово. Всегда стараюсь быть прозрачным для людей. <br>
+											Честность - мое жизненное кредо.
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/truth-about.png"  alt="">
+										<h3 class="front__title">ЧЕСТНОСТЬ</h3>
+										<p class="collection__info-text">
+
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											Практика показывает, что заминка на 15 минут, затягивает рабочий процесс
+											в среднем на час-полтора. Пунктуальность и точность очень важны и я уделяю
+											этому особое внимание. Самое худшее - ждать. Я прикладываю максимум, чтобы меня
+											не ждали, поэтому практически всегда появляюсь вовремя. Для меня это очень важно!
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/darts-about.png"  alt="">
+										<h3 class="front__title">ТОЧНОСТЬ</h3>
+
+									</div>
+								</div>
+							</div>
+
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											Практика показывает, что заминка на 15 минут, затягивает рабочий процесс
+											в среднем на час-полтора. Пунктуальность и точность очень важны и я уделяю
+											этому особое внимание. Самое худшее - ждать. Я прикладываю максимум, чтобы меня
+											не ждали, поэтому практически всегда появляюсь вовремя. Для меня это очень важно!
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/chess-about.png"  alt="">
+										<h3 class="front__title" style="letter-spacing: 1px">ПРОФЕССИОНАЛИЗМ</h3>
+
+									</div>
+								</div>
+							</div>
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											Практика показывает, что заминка на 15 минут, затягивает рабочий процесс
+											в среднем на час-полтора. Пунктуальность и точность очень важны и я уделяю
+											этому особое внимание. Самое худшее - ждать. Я прикладываю максимум, чтобы меня
+											не ждали, поэтому практически всегда появляюсь вовремя. Для меня это очень важно!
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/response-about.png"  alt="">
+										<h3 class="front__title" style="letter-spacing: 1px">ОТВЕТСТВЕННОСТЬ</h3>
+
+									</div>
+								</div>
+							</div>
+							<div class="flip-container">
+								<div class="flip3D">
+									<div class="back" >
+										<img class="a" src="" style="height: 370px;"  alt="">
+										<p class="back_info-text">
+											Практика показывает, что заминка на 15 минут, затягивает рабочий процесс
+											в среднем на час-полтора. Пунктуальность и точность очень важны и я уделяю
+											этому особое внимание. Самое худшее - ждать. Я прикладываю максимум, чтобы меня
+											не ждали, поэтому практически всегда появляюсь вовремя. Для меня это очень важно!
+										</p>
+									</div>
+									<div class="front" >
+										<img class="a" src="images/books-about.png"  alt="">
+										<h3 class="front__title" >КНИГИ</h3>
+
+									</div>
+								</div>
+							</div>
+
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+	
+	<!-- Footer -->
+<footer class="footer">
+	<div class="container">
+
+	</div>
+</footer>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/1abbc51b83.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
