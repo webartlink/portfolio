@@ -459,12 +459,133 @@ a {
     padding-top: 3px;
 }
 
+/* Образование */
+
+.education {
+    padding: 80px 0 30px;
+    background-image: linear-gradient(90deg, rgb(62, 25, 113),rgb(72, 105, 206));
+}
+.education__title {
+    text-align: center;
+    font-size: 35px;
+    line-height: 60px;
+    padding-bottom: 26px;
+    margin-bottom: 26px;
+    position: relative;
+    letter-spacing: 3px;
+    color: #c4c4c4;
+    font-family: 'PT Serif', serif;
+}
+.education__items-box {
+    display: flex;
+    border-bottom: 2px solid gold;
+    position: relative;
+}
+
+.education__items-box::before {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: gold;
+}
+
+.education__item {
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+}
+.education__item-title {
+    color: whitesmoke;
+}
+.education__item--production {
+    margin-left: 317px;
+
+}
+
+.education__item--production::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     height: 20px;
+     width: 2px;
+     background: gold;
+ }
 
 
+.education__item--production,
+.education__item--consultation {
+     padding-bottom: 38px;
+ }
+
+.education__item--measuring {
+    padding-top: 38px;
+    margin-left: 305px;
+}
+
+.education__item--measuring::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     height: 20px;
+     width: 2px;
+     background: gold;
+
+ }
 
 
+.education__item-title {
+     margin-left: 13px;
 
+ }
 
+.education__item-text {
+     margin-top: 13px;
+    color: #9b8d8d;
+
+ }
+
+/*ОПЫТ*/
+.experience__inner {
+background-image: url('./images/titleexp-bg.png');
+background-repeat: no-repeat;
+margin-left: -10px;
+    height: 250px;
+}
+
+.experience__title {
+    padding-top: 100px;
+    padding-bottom: 140px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+    margin-left: 50px;
+}
+
+.experience__block {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+.experience__block-card {
+    text-align: center;
+    margin-right: 10px;
+}
+.card-text {
+    padding-top: 10px;
+    color: white;
+    font-size: 18px;
+}
 
 
 
