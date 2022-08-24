@@ -337,7 +337,7 @@ a {
 }
 
 .about__inner {
-    background-image: url('./images/about-bg.png');
+    background-image: url('../images/about-bg.png');
     background-repeat: no-repeat;
     margin-left: -10px;
 
@@ -554,7 +554,7 @@ a {
 
 /*ОПЫТ*/
 .experience__inner {
-background-image: url('./images/titleexp-bg.png');
+background-image: url('../images/titleexp-bg.png');
 background-repeat: no-repeat;
 margin-left: -10px;
     height: 250px;
@@ -588,6 +588,57 @@ margin-left: -10px;
 }
 
 
+/*Портфолио*/
+
+.portfolio {
+    background-image: linear-gradient(90deg, rgb(217, 198, 252),rgb(82, 114, 237));
+}
+
+.portfolio__title {
+    padding-top: 100px;
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+}
+
+.portfolio__text {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 25px;
+    color: #9b8d8d;
+}
+
+.portfolio__slider{
+    max-width: 640px;
+    margin: 0 auto;
+    filter: drop-shadow(0px 2px 24px rgba(0, 0, 0, 0.3));
+    padding-top: 50px;
+}
+
+/*Стилим и Выставляем кнопки*/
+.slick-arrow{
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    background-color: #ecb84c;
+    cursor: pointer;
+    outline: none;
+    /*Выставляем*/
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+
+.slick-prev{
+    left: -20px;
+}
+.slick-next{
+    right: -20px;
+}
 
 
 
