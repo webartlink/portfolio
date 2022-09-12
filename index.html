@@ -19,7 +19,7 @@
 				<div class="header__inner">
 					<div class="header__info">
 					<!-- Курс валют -->
-					<form class="rates">
+					<div class="rates">
 						<div class="courses">
 							<h1 class="rates__title">Курс:</h1>
 							<div class="course-item card card-body">
@@ -36,7 +36,7 @@
 							</div>
 						</div>
 
-					</form>
+					</div>
             <!--ПОГОДА-->
 					<div class="weather">
 						<div class="weather__inner">
@@ -55,17 +55,46 @@
              <!--Дата и Время-->
 					<div class="dateTime"></div>
 					</div>
-			<nav class="menu">
-				<a class="menu__item-about" href="">Обо мне</a>
-				<a class="menu__item-portfolio" href="">Портфолио</a>
-				<a class="menu__item-experience" href="">Опыт</a>
-				<a class="menu__item-contacts" href="">Контакты</a>
-			</nav>
+<!--					<nav class="menu">-->
+<!--						<a class="menu__item menu__item-about  href="">Обо мне</a>-->
+<!--						<a class="menu__item menu__item-portfolio b-link" href="">Портфолио</a>-->
+<!--						<a class="menu__item menu__item-experience b-link" href="">Опыт</a>-->
+<!--						<a class="menu__item menu__item-contacts b-link" href="">Контакты</a>-->
+<!--					</nav>-->
+
+					<div id="burger-menu">
+						<span></span>
+					</div>
+
+					<div id="menu" class="menu">
+						<ul><li><a class="menu__item"  href="#">Главная</a></li>
+							<li><a class="menu__item"  href="#">Обо мне</a></li>
+							<li><a class="menu__item" href="#">Портфолио</a></li>
+							<li><a class="menu__item" href="#">Опыт</a></li>
+							<li><a class="menu__item" href="#">Контакты</a></li>
+						</ul>
+					</div>
+
+
+
+
 				</div>
 		</div>
+
+
+
+
+
+		</div>
+
+
+
+
+
+
 	</header>
 
-	<!-- Section Greeting -->
+<!--	 Section Greeting-->
 	<section class="greeting">
 		<div class="container">
 			<div class="greeting__card">
@@ -327,19 +356,56 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<!-- Footer -->
-<footer class="footer">
-	<div class="container">
+	<footer class="footer" id="contacts">
+		<div class="footer__content">
+			<div class="container">
+				<div class="footer__inner">
+					<div class="footer__info">
+						<h2 class="footer__info-title">
+							Свяжитесь со мной.
+						</h2>
 
-	</div>
-</footer>
+						<div class="footer__contacts-wrapper">
+							<ul class="footer__list">
+								<li><a class="footer__phone" href="tel:89992498405"><img class="footer__phone-phone" src="images/phone.png"> 8(999) 249-84-05</a></li>
+								<li><a href="#"><img class="footer__phone-email" src="images/email.png">linkartweb@gmail.com</a></li>
+							</ul>
+							<div class="footer__social">
+								<a class="footer__social-item" href="https://www.instagram.com/invites/contact/?i=vgyxav4oq7ry&utm_content=2o31kft" target="blank"><i class="fab fa-instagram"></i></a>
+								<a class="footer__social-item" href="https://wa.me/message/LMBUSL2B2A5UK1" target="blank"><i class="fab fa-whatsapp-square"></i></a>
+								<a class="footer__social-item" href="https://t.me/Lux_Pereezd" target="blank"><i class="fab fa-telegram-plane"></i></a>
+								<a class="footer__social-item" href="https://t.me/Lux_Pereezd" target="blank"><i class="far fa-envelope"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="footer__map">
+						<iframe height="250" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1999.4058182423878!2d30.356225825332096!3d59.925408023532164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631a4ab260665%3A0x5bc2dc925abf8d9!2z0JvQuNCz0L7QstGB0LrQuNC5INC_0YAuLCA1MCwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE2Nw!5e0!3m2!1sru!2sru!4v1596995475033!5m2!1sru!2sru"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer__copy">
+			<div class="container">
+				<div class="footer__copy-inner">
+				<p class="copy__text">
+					By Artem Niyasov 2022. All rights reserved.
+				</p>
+				<img class="copy__text-logo" src="images/tree.png" alt="logo">
+				</div>
+			</div>
+		</div>
+	</footer>
 
 
 
 
 
-<script src="https://kit.fontawesome.com/1abbc51b83.js" crossorigin="anonymous"></script>
+
+
+
+	<script src="https://kit.fontawesome.com/1abbc51b83.js" crossorigin="anonymous"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="js/slick.min.js"></script>
 <script src="js/script.js"></script>

@@ -5,6 +5,7 @@
 	padding: 0;
 	margin: 0;
     font-family: 'Open Sans', sans-serif;
+    list-style: none;
     /*font-family: 'PT Serif', serif;*/
 }
 body {
@@ -46,41 +47,158 @@ a {
 
 /* Header styles */
 .header {
-	padding-top: 50px;
+	padding-top: 25px;
 	color: #c4c4c4;
+    position: sticky;
+    top: 0;
+    background-image: radial-gradient(
+            circle at 90% 24%,
+            rgba(209, 209, 209, 0.04) 0%,
+            rgba(209, 209, 209, 0.04) 50%,
+            rgba(160, 160, 160, 0.04) 50%,
+            rgba(160, 160, 160, 0.04) 100%
+    ),
+    radial-gradient(
+            circle at 91% 63%,
+            rgba(45, 45, 45, 0.04) 0%,
+            rgba(45, 45, 45, 0.04) 50%,
+            rgba(87, 87, 87, 0.04) 50%,
+            rgba(87, 87, 87, 0.04) 100%
+    ),
+    radial-gradient(
+            circle at 17% 2%,
+            rgba(124, 124, 124, 0.04) 0%,
+            rgba(124, 124, 124, 0.04) 50%,
+            rgba(117, 117, 117, 0.04) 50%,
+            rgba(117, 117, 117, 0.04) 100%
+    ),
+    linear-gradient(88deg, rgb(33, 20, 105), rgb(1, 15, 13));
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+
+    z-index: 100;
+
 }
 
-/* Menu */
+
+
 .header__inner {
     display: flex;
     justify-content: space-between;
 }
-.menu {
-    display: flex;
-	justify-content: flex-start;
-	align-items: center;
+
+/* Menu */
+
+#burger-menu {
+    cursor: pointer;
+    height: 27px;
+    width: 27px;
+    margin: 50px;
+    overflow: visible;
+    position: relative;
+    z-index:2;
 }
-.menu__item-about,
-.menu__item-portfolio,
-.menu__item-experience,
-.menu__item-contacts {
-	display: inline-block;
-	font-size: 20px;
-	margin-right: 45px;
+#burger-menu span,
+#burger-menu span:before,
+#burger-menu span:after {
+    background: #fff;
+    display: block;
+    height: 4px;
+    opacity: 1;
+    position: absolute;
+    transition: 0.3s ease-in-out;
 }
-.menu__item-about {
-	margin-left: 130px;
+#burger-menu span:before,
+#burger-menu span:after {
+    content: "";
+}
+#burger-menu span {
+    right: 0px;
+    top: 13px;
+    width: 27px;
+}
+#burger-menu span:before {
+    left: 0px;
+    top: -10px;
+    width: 16px;
+}
+#burger-menu span:after {
+    left: 0px;
+    top: 10px;
+    width: 20px;
 }
 
-.menu .menu__item-about:hover,
-.menu .menu__item-contacts:hover,
-.menu .menu__item-portfolio:hover,
-.menu .menu__item-experience:hover {
-	color: #f0e68c;
+#burger-menu.close span {
+    transform: rotate(-45deg);
+    top: 13px;
+    width: 27px;
+}
+#burger-menu.close span:before {
+    top: 0px;
+    transform: rotate(90deg);
+    width: 27px;
+}
+#burger-menu.close span:after {
+    top: 0px;
+    left:0;
+    transform: rotate(90deg);
+    opacity:0;
+    width:0;
+}
+
+#menu{
+    z-index:1;
+    min-width:76%;
+    min-height:100%;
+    position: fixed;
+    top:0;
+    height:0;
+    visibility: hidden;
+    opacity: 0;
+    text-align:center;
+    padding-top:20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+#menu.overlay{
+    visibility: visible;
+    opacity: 1;
+    padding-top:100px;
+    background:rgba(0,0,0,0.5);
+}
+
+#menu li{
+    list-style:none;
+}
+#menu a{
+
+    display:block;
+    font-size: 32px;
+    margin-bottom:30px;
+
+}
+
+
+
+
+.menu .menu__item:hover,
+.menu .menu__item:hover,
+.menu .menu__item:hover,
+.menu .menu__item:hover {
 	transform: scaleY(1.05);
 	transform: scaleX(1.05);
 	text-decoration: underline;
+    color: #ecb84c;
+
+
 }
+
+.header__info {
+    padding-bottom: 10px;
+}
+
 /* Section Greeting */
 .greeting {
     padding-top: 100px;
@@ -291,6 +409,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-top: -3px;
 
 }
 .weather__items {
@@ -305,27 +424,38 @@ a {
 	font-size: 13px;
 	letter-spacing: 1px;
     padding-right: 10px;
+    padding-top: 11px;
 }
 
 .weather__city {
 	color: #9b8d8d;
 	font-size: 13px;
     padding-right: 15px;
+    padding-top: 11px;
 
 }
 
 .weather__temperature {
 	color:#9b8d8d;
 	font-size: 20px;
+    padding-top: 11px;
 
 }
+.weather__sky {
+    font-size: 13px;
+    padding-top: 3px;
+}
 
-
+.weather__img {
+    height: 35px;
+    width: 35px;
+}
 /* Время и Дата */
 .dateTime {
 	font-size: 13px;
 	color: #9b8d8d;
     letter-spacing: 1px;
+    margin-top: 12px;
 
 }
 
@@ -640,6 +770,126 @@ margin-left: -10px;
     right: -20px;
 }
 
+/*Footer*/
+
+.footer__content{
+    background-color: #595959;
+    padding: 20px 0 30px;
+}
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer__inner .header__btn{
+    float: none;
+    display: inline-block;
+}
+.footer__map{
+    padding-top: 10px;
+    max-width: 630px;
+    width: 100%;
+}
+.footer__map iframe{
+    width: 100%;
+
+}
+.footer__info-title{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    font-family: 'PT Serif', serif;
+    color: #ffffff;
+    letter-spacing: 0.5px;
+}
+.footer__text{
+    color: #d3d2d2;
+    margin-bottom: 20px;
+}
+.footer__info{
+    max-width: 360px;
+}
+
+.footer__contacts-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.footer__list {
+    padding-top: 49px;
+}
+.footer__list li{
+    margin-top: 10px;
+}
+.footer__list a{
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0.25px;
+    color: white;
+    font-weight: 400;
+    padding-left: 30px;
+    position: relative;
+
+}
+.footer__phone-phone {
+    margin-right: 5px;
+}
+
+.footer__phone-email {
+    margin-right: 12px;
+}
+.footer__social {
+    display: flex;
+    padding-top: 58px;
+    justify-content: space-between;
+    color: white;
+}
+
+
+
+.footer__social a:before{
+    content: "";
+    position: absolute;
+    color: #ffc222;
+    font-size: 25px;
+
+
+}
+
+.footer__social-item{
+    margin: 15px 0;
+
+}
+
+.footer__copy{
+    background-color: #303030;
+    text-align: center;
+    font-size: 12px;
+    line-height: 24px;
+    padding: 8px 0;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer__copy-inner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.copy__text {
+    color: white;
+}
+
+
+/*Menu*/
+
+/*body {*/
+/*    margin:0;*/
+/*    background: #1e3c72;*/
+/*    background: -webkit-linear-gradient(to right, #2a5298, #1e3c72);*/
+/*    background: linear-gradient(to right, #2a5298, #1e3c72);*/
+/*}*/
 
 
 
@@ -647,12 +897,18 @@ margin-left: -10px;
 
 
 
+/*АДАПТИВ*/
+
+@media (max-width: 1200px) {
+    .header__info {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
 
 
-
-
-
-
+}
 
 
 

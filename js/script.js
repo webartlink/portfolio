@@ -63,7 +63,7 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q=Moscow&appid=4a18628417
 	console.log(data)
 	document.querySelector('.weather__city').textContent = data.name;
 	document.querySelector('.weather__temperature').innerHTML = Math.round(data.main.temp - 273) + '&deg';
-	document.querySelector('.weather__sky').textContent = data.weather[0]['description'];
+	// document.querySelector('.weather__sky').textContent = data.weather[0]['description'];
 	document.querySelector('.weather__img').innerHTML = `<img src="https://openweathermap.org/img/wn/${data.weather[0]['icon']}.png">`;
 
 })
@@ -117,6 +117,12 @@ $(function(){
 });
 
 
+var burgerMenu = document.getElementById('burger-menu');
+var overlay = document.getElementById('menu');
+burgerMenu.addEventListener('click',function(){
+    this.classList.toggle("close");
+    overlay.classList.toggle("overlay");
+});
 
 
 
